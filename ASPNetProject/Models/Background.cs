@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace ASPNetProject.Models
 {
-    public class Faculty
+    public class Background
     {
         public int Id { get; set; }
-        [Required, StringLength(200)]
-        public string Name { get; set; }
-        public ICollection<Teacher> Teachers { get; set; }
+        [Required,StringLength(300)]
+        public string Image { get; set; }
     }
 }

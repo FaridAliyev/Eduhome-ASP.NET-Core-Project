@@ -9,8 +9,12 @@ namespace ASPNetProject.Models
     public class Skill
     {
         public int Id { get; set; }
-        [Required, StringLength(200)]
-        public string Name { get; set; }
-        public ICollection<TeacherSkill> TeacherSkills { get; set; }
+        public int Language { get; set; }
+        public int TeamLeader { get; set; }
+        public int Development { get; set; }
+        public int Design { get; set; }
+        public int Innovation { get; set; }
+        public int Communication { get; set; }
+        public virtual Teacher Teacher { get; set; }
     }
 }

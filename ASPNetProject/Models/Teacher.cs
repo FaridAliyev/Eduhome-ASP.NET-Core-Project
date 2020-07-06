@@ -13,10 +13,12 @@ namespace ASPNetProject.Models
         public string Fullname { get; set; }
         [Required, StringLength(300)]
         public string Image { get; set; }
+        public int SkillId { get; set; }
+        public int FacultyId { get; set; }
         public virtual TeacherInfo TeacherInfo { get; set; }
-        public ICollection<TeacherSkill> TeacherSkills { get; set; }
+        public virtual Skill Skill { get; set; }
+        public virtual Faculty Faculty { get; set; }
         public ICollection<TeacherHobbie> TeacherHobbies { get; set; }
-        public ICollection<TeacherFaculty> TeacherFaculties { get; set; }
         public ICollection<TeacherDegree> TeacherDegrees { get; set; }
     }
 }

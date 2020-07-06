@@ -13,6 +13,8 @@ namespace ASPNetProject.Models
         public string Phone { get; set; }
         [Required, StringLength(100)]
         public string Logo { get; set; }
+        [StringLength(500)]
+        public string Description { get; set; }
         [StringLength(100)]
         public string Facebook { get; set; }
         [StringLength(100)]

@@ -4,14 +4,16 @@ using ASPNetProject.DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ASPNetProject.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200706154827_AddedCourseAndAssociatedTables")]
+    partial class AddedCourseAndAssociatedTables
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -40,21 +42,6 @@ namespace ASPNetProject.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("About");
-                });
-
-            modelBuilder.Entity("ASPNetProject.Models.Background", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Image")
-                        .IsRequired()
-                        .HasMaxLength(300);
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Backgrounds");
                 });
 
             modelBuilder.Entity("ASPNetProject.Models.Bio", b =>
@@ -97,39 +84,6 @@ namespace ASPNetProject.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Bios");
-                });
-
-            modelBuilder.Entity("ASPNetProject.Models.Blog", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Date")
-                        .HasMaxLength(100);
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasMaxLength(700);
-
-                    b.Property<string>("Image")
-                        .IsRequired()
-                        .HasMaxLength(300);
-
-                    b.Property<string>("PostedBy")
-                        .IsRequired()
-                        .HasMaxLength(100);
-
-                    b.Property<string>("Quote")
-                        .HasMaxLength(500);
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasMaxLength(400);
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Blogs");
                 });
 
             modelBuilder.Entity("ASPNetProject.Models.Course", b =>
@@ -229,59 +183,6 @@ namespace ASPNetProject.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Degrees");
-                });
-
-            modelBuilder.Entity("ASPNetProject.Models.Event", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Date")
-                        .IsRequired()
-                        .HasMaxLength(200);
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasMaxLength(700);
-
-                    b.Property<string>("Image")
-                        .IsRequired()
-                        .HasMaxLength(300);
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(400);
-
-                    b.Property<string>("Time")
-                        .IsRequired()
-                        .HasMaxLength(200);
-
-                    b.Property<string>("Venue")
-                        .HasMaxLength(300);
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Events");
-                });
-
-            modelBuilder.Entity("ASPNetProject.Models.EventSpeaker", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("EventId");
-
-                    b.Property<int>("SpeakerId");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("EventId");
-
-                    b.HasIndex("SpeakerId");
-
-                    b.ToTable("EventSpeakers");
                 });
 
             modelBuilder.Entity("ASPNetProject.Models.Faculty", b =>
@@ -388,33 +289,6 @@ namespace ASPNetProject.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("SliderContents");
-                });
-
-            modelBuilder.Entity("ASPNetProject.Models.Speaker", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Company")
-                        .IsRequired()
-                        .HasMaxLength(300);
-
-                    b.Property<string>("Duty")
-                        .IsRequired()
-                        .HasMaxLength(200);
-
-                    b.Property<string>("Fullname")
-                        .IsRequired()
-                        .HasMaxLength(200);
-
-                    b.Property<string>("Image")
-                        .IsRequired()
-                        .HasMaxLength(300);
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Speakers");
                 });
 
             modelBuilder.Entity("ASPNetProject.Models.Teacher", b =>
@@ -545,19 +419,6 @@ namespace ASPNetProject.Migrations
                     b.HasOne("ASPNetProject.Models.Course", "Course")
                         .WithOne("CourseFeature")
                         .HasForeignKey("ASPNetProject.Models.CourseFeature", "CourseId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("ASPNetProject.Models.EventSpeaker", b =>
-                {
-                    b.HasOne("ASPNetProject.Models.Event", "Event")
-                        .WithMany("EventSpeakers")
-                        .HasForeignKey("EventId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("ASPNetProject.Models.Speaker", "Speaker")
-                        .WithMany("EventSpeakers")
-                        .HasForeignKey("SpeakerId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 

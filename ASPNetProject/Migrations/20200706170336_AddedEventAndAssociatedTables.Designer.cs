@@ -4,14 +4,16 @@ using ASPNetProject.DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ASPNetProject.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200706170336_AddedEventAndAssociatedTables")]
+    partial class AddedEventAndAssociatedTables
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -40,21 +42,6 @@ namespace ASPNetProject.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("About");
-                });
-
-            modelBuilder.Entity("ASPNetProject.Models.Background", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Image")
-                        .IsRequired()
-                        .HasMaxLength(300);
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Backgrounds");
                 });
 
             modelBuilder.Entity("ASPNetProject.Models.Bio", b =>
@@ -97,39 +84,6 @@ namespace ASPNetProject.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Bios");
-                });
-
-            modelBuilder.Entity("ASPNetProject.Models.Blog", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Date")
-                        .HasMaxLength(100);
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasMaxLength(700);
-
-                    b.Property<string>("Image")
-                        .IsRequired()
-                        .HasMaxLength(300);
-
-                    b.Property<string>("PostedBy")
-                        .IsRequired()
-                        .HasMaxLength(100);
-
-                    b.Property<string>("Quote")
-                        .HasMaxLength(500);
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasMaxLength(400);
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Blogs");
                 });
 
             modelBuilder.Entity("ASPNetProject.Models.Course", b =>
