@@ -4,14 +4,16 @@ using ASPNetProject.DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ASPNetProject.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200707205739_AddedNoticeBoardTable")]
+    partial class AddedNoticeBoardTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -563,35 +565,6 @@ namespace ASPNetProject.Migrations
                         .IsUnique();
 
                     b.ToTable("TeacherInfos");
-                });
-
-            modelBuilder.Entity("ASPNetProject.Models.Testimonial", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Duty")
-                        .HasMaxLength(200);
-
-                    b.Property<string>("Fullname")
-                        .IsRequired()
-                        .HasMaxLength(200);
-
-                    b.Property<string>("Image")
-                        .IsRequired()
-                        .HasMaxLength(300);
-
-                    b.Property<string>("Qualification")
-                        .HasMaxLength(200);
-
-                    b.Property<string>("Review")
-                        .IsRequired()
-                        .HasMaxLength(500);
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Testimonials");
                 });
 
             modelBuilder.Entity("ASPNetProject.Models.CourseDetail", b =>

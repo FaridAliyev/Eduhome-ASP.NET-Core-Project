@@ -22,7 +22,11 @@ namespace ASPNetProject.Controllers
                 Sliders = _db.Sliders,
                 Content = _db.SliderContents.FirstOrDefault(),
                 Services=_db.Services,
-                About=_db.About.FirstOrDefault()
+                About=_db.About.FirstOrDefault(),
+                Video=_db.NoticeVideos.FirstOrDefault(),
+                NoticeBoards=_db.NoticeBoards,
+                Events=_db.Events.OrderByDescending(e=>e.Id).Take(2),
+                Testimonials=_db.Testimonials
             };
             return View(model);
         }

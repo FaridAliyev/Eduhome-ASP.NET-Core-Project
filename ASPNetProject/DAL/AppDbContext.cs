@@ -34,5 +34,8 @@ namespace ASPNetProject.DAL
         public DbSet<EventSpeaker> EventSpeakers { get; set; }
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Background> Backgrounds { get; set; }
+        public DbSet<NoticeVideo> NoticeVideos { get; set; }
+        public DbSet<NoticeBoard> NoticeBoards { get; set; }
+        public DbSet<Testimonial> Testimonials { get; set; }
     }
 }

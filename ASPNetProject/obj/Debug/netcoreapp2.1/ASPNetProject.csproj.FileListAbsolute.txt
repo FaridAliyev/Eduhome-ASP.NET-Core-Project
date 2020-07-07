@@ -27,3 +27,4 @@ E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\ASPNetProject.csproj.CopyCompl
 E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
 E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\Header\Default.cshtml.g.cs
 E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\Footer\Default.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\Courses\Default.cshtml.g.cs

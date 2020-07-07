@@ -97,7 +97,7 @@ using ASPNetProject.ViewModels;
                         <a href=""index.html"">");
             EndContext();
             BeginContext(1037, 50, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "f25bff4abe964304bbf14ad72bdf3d37", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "8380d7d7c7f64d31a4a6d1719768564e", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -133,7 +133,7 @@ AddHtmlAttributeValue("", 1058, Model.Logo, 1058, 11, false);
                                         ");
             EndContext();
             BeginContext(1519, 52, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ebb3231056fa4b0985f308cd11e54ec2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4d8e62c1a6f14b69a5bdfd566ab003b2", async() => {
                 BeginContext(1563, 4, true);
                 WriteLiteral("Home");
                 EndContext();
@@ -202,7 +202,7 @@ AddHtmlAttributeValue("", 1058, Model.Logo, 1058, 11, false);
                                         ");
             EndContext();
             BeginContext(3343, 409, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ddb27c0dd20849588e5ca10c45d59457", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "384707db2bb6420d87e1e9d6e9faf5da", async() => {
                 BeginContext(3377, 368, true);
                 WriteLiteral(@"
                                             <input type=""search"" placeholder=""Search here..."" name=""search"" />
