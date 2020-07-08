@@ -1,0 +1,31 @@
+﻿@model TeachersVM
+@{
+    ViewData["Title"] = "Teachers";
+}
+
+<!-- Banner Area Start -->
+<div class="banner-area-wrapper">
+    <div class="banner-area text-center" style="background-image: url('@Url.Content("~/img/banner/"+Model.Background.Image)')!important">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="banner-content-wrapper">
+                        <div class="banner-content">
+                            <h2>our teachers</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Banner Area End -->
+<!-- Teacher Start -->
+<div class="teacher-area pt-150 pb-105">
+    <div class="container">
+        <div class="row">
+            @await Component.InvokeAsync("Teachers",12)
+        </div>
+    </div>
+</div>
+<!-- Teacher End -->
