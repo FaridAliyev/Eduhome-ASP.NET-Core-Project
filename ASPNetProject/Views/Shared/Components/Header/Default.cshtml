@@ -25,7 +25,7 @@
             <div class="row">
                 <div class="col-md-3 col-sm-3 col-xs-6">
                     <div class="logo">
-                        <a href="index.html"><img src="~/img/logo/@Model.Logo" alt="eduhome" /></a>
+                        <a asp-controller="Home" asp-action="Index"><img src="~/img/logo/@Model.Logo" alt="eduhome" /></a>
                     </div>
                 </div>
                 <div class="col-md-9 col-sm-9 col-xs-6">
@@ -48,15 +48,16 @@
                                         <a asp-controller="Teacher" asp-action="Index">teacher</a>
                                     </li>
                                     <li>
-                                        <a href="blog.html">blog</a>
+                                        <a asp-controller="Blog" asp-action="Index">blog</a>
                                     </li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a asp-controller="Contact" asp-action="Index">Contact</a></li>
                                 </ul>
                             </nav>
                         </div>
                         @{string controller = @ViewContext.RouteData.Values["controller"].ToString();}
                         @if (controller != "Home" && controller != "About" && controller != "Contact")
                         {
+                            <input type="hidden" id="ctrl" value="@controller" />
                             <!--Search Form Start-->
                             <div class="search-btn">
                                 <ul data-toggle="dropdown" class="header-search search-toggle">
@@ -67,10 +68,10 @@
                                 <div class="search">
                                     <div class="search-form">
                                         <form id="search-form" action="#">
-                                            <input type="search" placeholder="Search here..." name="search" />
-                                            <button type="submit">
-                                                <span><i class="fa fa-search"></i></span>
-                                            </button>
+                                            <input type="search" placeholder="Search here..." name="search" class="search-field" autocomplete="off"/>                              
+                                            <ul class="list-group my-list-group">
+                                                
+                                            </ul>
                                         </form>
                                     </div>
                                 </div>

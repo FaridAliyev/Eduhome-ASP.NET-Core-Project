@@ -11,5 +11,6 @@ namespace ASPNetProject.ViewModels
         public Background Background { get; set; }
         public Course Course { get; set; }
         public IEnumerable<Course> Courses { get; set; }
+        public IEnumerable<Blog> SideBlogs { get; set; }
     }
 }

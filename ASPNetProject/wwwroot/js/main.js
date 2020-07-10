@@ -128,3 +128,24 @@ $(".notice-left").niceScroll({
         });
 
 })(jQuery);	
+
+// Search Bar
+let controller = $('#ctrl').val();
+$('.search-field').keyup(function () {
+    let field = $(this);
+    term = field.val();
+    if (term == "") {
+        field.next().empty();
+    }
+    if (term.length > 0) {
+        $.ajax({
+            url: "/"+controller+"/Search?term=" + term,
+            type: "Get",
+            success: function (response) {
+                field.next().empty();
+                field.next().append(response);
+            }
+        });
+    }
+
+});

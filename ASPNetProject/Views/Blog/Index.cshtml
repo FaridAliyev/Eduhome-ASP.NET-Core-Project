@@ -1,0 +1,133 @@
+﻿@model BlogVM
+@{
+    ViewData["Title"] = "Blogs";
+}
+
+<!-- Banner Area Start -->
+<div class="banner-area-wrapper">
+    <div class="banner-area text-center" style="background-image: url('@Url.Content("~/img/banner/"+Model.Background.Image)')!important">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="banner-content-wrapper">
+                        <div class="banner-content">
+                            <h2>blog / right side bar</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Banner Area End -->
+<!-- Blog Start -->
+<div class="blog-area pt-150 pb-150">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">                  
+                    @foreach (Blog item in Model.Blogs)
+                    {
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="single-blog mb-60">
+                                <div class="blog-img">
+                                    <a asp-controller="Blog" asp-action="Details" asp-route-id="@item.Id"><img src="~/img/blog/@item.Image" alt="blog"></a>
+                                    <div class="blog-hover">
+                                        <i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-top">
+                                        <p>By @item.PostedBy  /  @item.Date  /  <i class="fa fa-comments-o"></i> 4</p>
+                                    </div>
+                                    <div class="blog-bottom">
+                                        <h2><a asp-controller="Blog" asp-action="Details" asp-route-id="@item.Id">@item.Title </a></h2>
+                                        <a asp-controller="Blog" asp-action="Details" asp-route-id="@item.Id">read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    <div class="col-md-12">
+                        <div class="pagination">
+                            <ul class="pagination">
+                                @for (int i = 1; i <= ViewBag.BlogPageCount; i++)
+                                {
+                                    if (i == ViewBag.CurrentPage)
+                                    {
+                                        <li class="page-item disabled"><a href="/blog/index?cp=@i" style="line-height:1.4" onClick="return false;">@i</a></li>
+                                    }
+                                    else
+                                    {
+                                        <li class="page-item"><a href="/blog/index?cp=@i" style="line-height:1.4">@i</a></li>
+                                    }
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="blog-sidebar right">
+                    <div class="single-blog-widget mb-50">
+                        <h3>search</h3>
+                        <div class="blog-search">
+                            <form id="search" action="#">
+                                <input type="search" placeholder="Search..." name="search" class="search-field" autocomplete="off"/>
+                                <ul class="list-group my-list-group" style="position:absolute;width:100%;z-index:99999">
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="single-blog-widget mb-50">
+                        <h3>categories</h3>
+                        <ul>
+                            @foreach (Course item in Model.Courses)
+                            {
+                                <li><a asp-controller="Course" asp-action="Details" asp-route-id="@item.Id">@item.Name</a></li>
+                            }
+                        </ul>
+                    </div>
+                    <div class="single-blog-widget mb-50">
+                        <div class="single-blog-banner">
+                            <a href="blog-details.html" id="blog"><img src="~/img/blog/blog-img.jpg" alt="blog"></a>
+                            <h2>best<br> eductaion<br> theme</h2>
+                        </div>
+                    </div>
+                    <div class="single-blog-widget mb-50">
+                        <h3>latest post</h3>                      
+                        @foreach (Blog item in Model.SideBlogs)
+                        {
+                            <div class="single-post mb-30">
+                                <div class="single-post-img">
+                                    <a asp-controller="Blog" asp-action="Details" asp-route-id="@item.Id">
+                                        <img src="~/img/blog/@item.Image" alt="post" style="width:95px;height:100px">
+                                        <div class="blog-hover">
+                                            <i class="fa fa-link"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="single-post-content">
+                                    <h4><a asp-controller="Blog" asp-action="Details" asp-route-id="@item.Id">@item.Title</a></h4>
+                                    <p>By @item.PostedBy  /  @item.Date</p>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <div class="single-blog-widget">
+                        <h3>tags</h3>
+                        <div class="single-tag">
+                            <a asp-controller="Course" asp-action="Index" class="mr-10 mb-10">courses</a>
+                            <a href="blog-details.html" class="mr-10 mb-10">education</a>
+                            <a asp-controller="Teacher" asp-action="Index" class="mb-10">teachers</a>
+                            <a href="blog-details.html" class="mr-10">learning</a>
+                            <a href="blog-details.html" class="mr-10">university</a>
+                            <a asp-controller="Event" asp-action="Index">events</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Blog End -->

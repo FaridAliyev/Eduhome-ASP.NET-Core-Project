@@ -23,7 +23,8 @@ namespace ASPNetProject.Controllers
             {
                 Background = _db.Backgrounds.FirstOrDefault(),
                 Events=_db.Events.OrderByDescending(e=>e.Id).Take(6),
-                Courses = _db.Courses.Take(6)
+                Courses = _db.Courses.Take(6),
+                SideBlogs = _db.Blogs.OrderByDescending(b => b.Id).Take(3)
             };
 
             return View(model);
@@ -48,10 +49,21 @@ namespace ASPNetProject.Controllers
                 Background = _db.Backgrounds.FirstOrDefault(),
                 Event = _db.Events.Include(e => e.EventSpeakers).FirstOrDefault(e => e.Id == id),
                 EventSpeakers = _db.EventSpeakers.Include(es=>es.Speaker),
-                Courses=_db.Courses.Take(6)
+                Courses=_db.Courses.Take(6),
+                SideBlogs = _db.Blogs.OrderByDescending(b => b.Id).Take(3)
             };
             
             return View(model);
+        }
+
+        public IActionResult Search(string term)
+        {
+            var model = _db.Events.Where(e => e.Name.Contains(term)).Select(e => new Event
+            {
+                Id = e.Id,
+                Name = e.Name
+            }).Take(8);
+            return PartialView("_EventSearch", model);
         }
     }
 }

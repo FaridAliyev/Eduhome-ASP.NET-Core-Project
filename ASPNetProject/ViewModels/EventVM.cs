@@ -13,5 +13,6 @@ namespace ASPNetProject.ViewModels
         public IEnumerable<EventSpeaker> EventSpeakers { get; set; }
         public Event Event { get; set; }
         public IEnumerable<Course> Courses { get; set; }
+        public IEnumerable<Blog> SideBlogs { get; set; }
     }
 }

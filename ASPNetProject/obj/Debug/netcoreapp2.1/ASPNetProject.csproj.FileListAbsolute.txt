@@ -37,3 +37,11 @@ E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Views\Event\Index.cshtml
 E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Views\Event\Details.cshtml.g.cs
 E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Views\Teacher\Index.cshtml.g.cs
 E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Views\Teacher\Details.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Views\Blog\Index.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Views\Blog\Details.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Views\Contact\Index.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CourseSearch.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_EventSearch.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_TeacherSearch.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_BlogSearch.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Views\Course\Filter.cshtml.g.cs

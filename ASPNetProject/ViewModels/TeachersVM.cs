@@ -10,5 +10,7 @@ namespace ASPNetProject.ViewModels
     {
         public Background Background { get; set; }
         public Teacher Teacher { get; set; }
+        public IEnumerable<TeacherHobbie> TeacherHobbies { get; set; }
+        public IEnumerable<TeacherDegree> TeacherDegrees { get; set; }
     }
 }

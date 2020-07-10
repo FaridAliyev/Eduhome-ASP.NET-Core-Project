@@ -36,10 +36,22 @@
                     <h4>about me</h4>
                     <p>@Model.Teacher.TeacherInfo.About</p>
                     <ul>
-                        <li><span>degree: </span>PHD in Micro Biology</li>
+                        <li><span>degree: </span>@foreach (TeacherDegree item in Model.TeacherDegrees)
+                        {
+                            if (item.TeacherId == Model.Teacher.Id)
+                            {
+                                @item.Degree.Name<span>, </span>
+                            }                           
+                        }</li>
                         <li><span>experience: </span>@Model.Teacher.TeacherInfo.ExperienceYear years experience</li>
-                        <li><span>hobbies: </span>music, travelling, catching fish</li>
-                        <li><span>faculty: </span>Din, Department of Micro Biology</li>
+                        <li><span>hobbies: </span>@foreach (TeacherHobbie item in Model.TeacherHobbies)
+                        {
+                            if (item.TeacherId==Model.Teacher.Id)
+                            {
+                                @item.Hobbie.Name<span>, </span>
+                            }
+                        }</li>
+                        <li><span>faculty: </span>@Model.Teacher.Faculty.Name</li>
                     </ul>
                 </div>
             </div>
