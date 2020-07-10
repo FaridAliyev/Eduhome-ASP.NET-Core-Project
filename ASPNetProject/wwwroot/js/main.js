@@ -130,10 +130,11 @@ $(".notice-left").niceScroll({
 })(jQuery);	
 
 // Search Bar
+
 let controller = $('#ctrl').val();
 $('.search-field').keyup(function () {
     let field = $(this);
-    term = field.val();
+    let term = field.val();
     if (term == "") {
         field.next().empty();
     }
@@ -147,5 +148,4 @@ $('.search-field').keyup(function () {
             }
         });
     }
-
 });

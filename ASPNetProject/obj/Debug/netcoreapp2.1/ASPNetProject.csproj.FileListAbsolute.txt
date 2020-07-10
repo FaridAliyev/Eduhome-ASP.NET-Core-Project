@@ -45,3 +45,5 @@ E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_EventSearc
 E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_TeacherSearch.cshtml.g.cs
 E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_BlogSearch.cshtml.g.cs
 E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Views\Course\Filter.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.cshtml.g.cs

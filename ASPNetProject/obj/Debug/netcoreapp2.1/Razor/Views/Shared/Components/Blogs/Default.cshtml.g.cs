@@ -64,7 +64,7 @@ using ASPNetProject.ViewModels;
             WriteLiteral("    <div class=\"col-md-4 col-sm-6 col-xs-12\">\r\n        <div class=\"single-blog\">\r\n            <div class=\"blog-img\">\r\n                ");
             EndContext();
             BeginContext(196, 117, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ab84c7a82140473bad18ff64724b9d42", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "908fddb648304b63afe5ac9353c144fe", async() => {
                 BeginContext(266, 4, true);
                 WriteLiteral("<img");
                 EndContext();
@@ -112,7 +112,7 @@ WriteAttributeValue("", 285, item.Image, 285, 11, false);
             WriteLiteral("\r\n                <div class=\"blog-hover\">\r\n                    ");
             EndContext();
             BeginContext(377, 100, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d12ae07f5aa243aebaf172ec47c8fe37", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08c1481ac7ee41a0a63cffd82bdf1185", async() => {
                 BeginContext(447, 26, true);
                 WriteLiteral("<i class=\"fa fa-link\"></i>");
                 EndContext();
@@ -169,7 +169,7 @@ WriteAttributeValue("", 285, item.Image, 285, 11, false);
             WriteLiteral("  /  <i class=\"fa fa-comments-o\"></i> 4</p>\r\n                </div>\r\n                <div class=\"blog-bottom\">\r\n                    <h2>");
             EndContext();
             BeginContext(794, 86, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2f4fb28455db4607a54b2746f36d61e2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a11f990bf984c488794c25829d1f598", async() => {
                 BeginContext(865, 10, false);
 #line 18 "E:\Projects\ASPNetProject\Views\Shared\Components\Blogs\Default.cshtml"
                                                                                          Write(item.Title);
@@ -213,7 +213,7 @@ WriteAttributeValue("", 285, item.Image, 285, 11, false);
             WriteLiteral("</h2>\r\n                    ");
             EndContext();
             BeginContext(907, 83, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f748c6602eba4970bfa9f7b46db16563", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f3a455337e444cf7a203ce349060e43c", async() => {
                 BeginContext(977, 9, true);
                 WriteLiteral("read more");
                 EndContext();
