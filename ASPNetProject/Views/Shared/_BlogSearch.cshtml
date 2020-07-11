@@ -3,6 +3,6 @@
 @foreach (Blog item in Model)
 {
     <li class="list-group-item" style="padding-bottom:13px">
-        <a asp-controller="Blog" asp-action="Details" asp-route-id="@item.Id">@item.Title</a>
+        <a asp-controller="Blog" asp-action="Details" asp-route-id="@item.Id">@item.Title.ToUpper()</a>
     </li>
 }

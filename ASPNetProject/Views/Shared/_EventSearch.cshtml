@@ -3,6 +3,6 @@
 @foreach (Event item in Model)
 {
     <li class="list-group-item" style="padding-bottom:13px">
-        <a asp-controller="Event" asp-action="Details" asp-route-id="@item.Id">@item.Name</a>
+        <a asp-controller="Event" asp-action="Details" asp-route-id="@item.Id">@item.Name.ToUpper()</a>
     </li>
 }

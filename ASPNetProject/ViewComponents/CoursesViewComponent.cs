@@ -24,7 +24,7 @@ namespace ASPNetProject.ViewComponents
                 Name=c.Name,
                 Image=c.Image,
                 Description=c.Description
-            }).Take(count);
+            }).OrderByDescending(c=>c.Id).Take(count);
 
             return View(await Task.FromResult(model));
         }

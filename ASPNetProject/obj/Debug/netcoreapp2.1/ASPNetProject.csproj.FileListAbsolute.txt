@@ -47,3 +47,13 @@ E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_BlogSearch
 E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Views\Course\Filter.cshtml.g.cs
 E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.cshtml.g.cs
 E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\_AdminLayout.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\_Validation.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Dashboard\Index.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Course\Index.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Course\Details.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Course\Create.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Course\Edit.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Course\Delete.cshtml.g.cs
