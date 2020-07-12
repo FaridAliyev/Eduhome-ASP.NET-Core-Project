@@ -1,0 +1,56 @@
+﻿@model EventVM
+@{
+    ViewData["Title"] = "Delete Event";
+}
+
+    <div class="event-details-area blog-area pt-150 pb-140">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="event-details">
+                        <div class="event-details-img">
+                            <img src="~/img/event/@Model.Event.Image" alt="event-details" style="width:770px;height:358px">
+                            <div class="event-date">
+                                @{string[] words = Model.Event.Date.Split(' ');}
+                                <h3>@words[0] @words[1].Substring(0, 3)</h3>
+                            </div>
+                        </div>
+                        <div class="event-details-content">
+                            <h2>@Model.Event.Name</h2>
+                            <ul>
+                                <li><span>time : </span>@Model.Event.Time</li>
+                                <li><span>venue : </span>@Model.Event.Venue</li>
+                            </ul>
+                            <p>@Html.Raw(Model.Event.Description)</p>
+                            <h4>speakers</h4>
+                            <div class="speakers-area fix d-flex">
+                                @foreach (EventSpeaker item in Model.EventSpeakers)
+                                {
+                                    if (item.EventId == Model.Event.Id)
+                                    {
+                                        <div class="single-speaker" style="margin-right:30px!important">
+                                            <div class="speaker-img">
+                                                <img src="~/img/event/@item.Speaker.Image" alt="speaker">
+                                            </div>
+                                            <div class="speaker-name">
+                                                <h5>@item.Speaker.Fullname</h5>
+                                                <p>@item.Speaker.Duty, @item.Speaker.Company </p>
+                                            </div>
+                                        </div>
+                                    }
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form method="post">
+                    <button type="submit" class="btn btn-danger mr-2">Delete</button>
+                    <a asp-action="Index" class="btn btn-dark btn-icon-text">
+                        Go Back
+                        <i class="mdi mdi-keyboard-backspace btn-icon-append"></i>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+

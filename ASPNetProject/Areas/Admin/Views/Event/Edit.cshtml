@@ -1,0 +1,126 @@
+﻿@model ApEventVM
+@{
+    ViewData["Title"] = "Edit Event";
+}
+
+<div class="row">
+    <div class="col-md-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Edit Event</h4>
+                <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+                <form class="forms-sample" method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="@Model.Event.Name"></label>
+                                <input asp-for="@Model.Event.Name" class="form-control" placeholder="Name">
+                                <span asp-validation-for="@Model.Event.Name" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="@Model.Event.Photo"></label>
+                                <input type="file" id="file" name="File" class="form-control" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label asp-for="@Model.Event.Description"></label>
+                                <textarea asp-for="@Model.Event.Description" id="editor"></textarea>
+                                <span asp-validation-for="@Model.Event.Description" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="@Model.Event.Date">Start Date</label>
+                                <input asp-for="@Model.Event.Date" class="form-control" readonly placeholder="Start Date and Time">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="@Model.Event.Date">Choose new Start Date and Time (leave empty if you dont want to change it)</label>
+                                <input type="datetime-local" name="DateTime" class="form-control" placeholder="Start Date and Time">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="@Model.Event.Time">Time</label>
+                                <input asp-for="@Model.Event.Time" readonly class="form-control" placeholder="Ending Time"> 
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="@Model.Event.Time">Choose new Ending Time (leave empty if you dont want to change it)</label>
+                                <input type="time" name="Time" class="form-control" placeholder="Ending Time">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label asp-for="@Model.Event.Venue"></label>
+                                <input asp-for="@Model.Event.Venue" class="form-control" placeholder="Venue">
+                                <span asp-validation-for="@Model.Event.Venue" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <h4>Current Speakers</h4>
+                            <div class="speakers-area fix d-flex">
+                                @foreach (EventSpeaker item in Model.EventSpeakers)
+                                {
+                                    if (item.EventId == Model.Event.Id)
+                                    {
+                                        <div class="single-speaker" style="margin-right:30px!important">
+                                            <div class="speaker-img">
+                                                <img src="~/img/event/@item.Speaker.Image" alt="speaker">
+                                            </div>
+                                            <div class="speaker-name">
+                                                <h5>@item.Speaker.Fullname</h5>
+                                                <p>@item.Speaker.Duty, @item.Speaker.Company </p>
+                                            </div>
+                                        </div>
+                                    }
+                                }
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="states[]">Select Speakers (leave empty if you want to keep current speakers)</label>
+                                <select class="js-example-basic-multiple" name="states[]" multiple="multiple" style="width:100%">
+                                    @foreach (Speaker item in Model.Speakers)
+                                    {
+                                        <option value="@item.Id">@item.Fullname</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                    <a asp-action="Index" class="btn btn-dark btn-icon-text">
+                        Go Back
+                        <i class="mdi mdi-keyboard-backspace btn-icon-append"></i>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <partial name="_Validation" />;
+    <script src="https://cdn.ckeditor.com/ckeditor5/20.0.0/classic/ckeditor.js"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#editor'))
+            .catch(error => {
+                console.error(error);
+            });
+        $(document).ready(function() {
+        $('.js-example-basic-multiple').select2();
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+}
+

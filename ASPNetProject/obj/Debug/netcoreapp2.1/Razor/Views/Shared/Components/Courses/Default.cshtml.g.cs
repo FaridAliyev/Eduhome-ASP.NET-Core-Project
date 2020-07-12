@@ -67,12 +67,12 @@ using ASPNetProject.ViewModels;
             WriteLiteral("    <div class=\"col-md-4 col-sm-6 col-xs-12\">\r\n        <div class=\"single-course mb-70\">\r\n            <div class=\"course-img\">\r\n                ");
             EndContext();
             BeginContext(210, 293, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55ee1ea24f444971a9d89a4529db0404", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a7c328c3e0049b6b24bf3b3de12403d", async() => {
                 BeginContext(282, 22, true);
                 WriteLiteral("\r\n                    ");
                 EndContext();
                 BeginContext(304, 49, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "7bb51f0a89634d99856a886c6a306923", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "f3f16b2759c34226a14971da8ffd8acf", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -130,7 +130,7 @@ AddHtmlAttributeValue("", 327, item.Image, 327, 11, false);
             WriteLiteral("\r\n            </div>\r\n            <div class=\"course-content\" style=\"max-height:220px\">\r\n                <h3>");
             EndContext();
             BeginContext(612, 86, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6c7f795da63943bebfc0738dfa8a7125", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f5aa44690d4c4470aebcc38b1c742941", async() => {
                 BeginContext(685, 9, false);
 #line 16 "E:\Projects\ASPNetProject\Views\Shared\Components\Courses\Default.cshtml"
                                                                                        Write(item.Name);
@@ -181,7 +181,7 @@ AddHtmlAttributeValue("", 327, item.Image, 327, 11, false);
             WriteLiteral("</p>\r\n                ");
             EndContext();
             BeginContext(773, 105, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3b1ea3049c90456cb4bf48e3c15b85da", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dad5e79e73c94c6ca2e92d881bf4e0e8", async() => {
                 BeginContext(865, 9, true);
                 WriteLiteral("read more");
                 EndContext();

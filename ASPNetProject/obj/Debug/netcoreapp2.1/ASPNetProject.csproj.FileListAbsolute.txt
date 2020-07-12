@@ -4,7 +4,6 @@ E:\Projects\ASPNetProject\bin\Debug\netcoreapp2.1\ASPNetProject.runtimeconfig.js
 E:\Projects\ASPNetProject\bin\Debug\netcoreapp2.1\ASPNetProject.runtimeconfig.dev.json
 E:\Projects\ASPNetProject\bin\Debug\netcoreapp2.1\ASPNetProject.dll
 E:\Projects\ASPNetProject\bin\Debug\netcoreapp2.1\ASPNetProject.pdb
-E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\ASPNetProject.csprojAssemblyReference.cache
 E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\ASPNetProject.RazorAssemblyInfo.cache
 E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\ASPNetProject.RazorAssemblyInfo.cs
 E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\ASPNetProject.AssemblyInfoInputs.cache
@@ -57,3 +56,9 @@ E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Course
 E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Course\Create.cshtml.g.cs
 E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Course\Edit.cshtml.g.cs
 E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Course\Delete.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Event\Index.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Event\Details.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Event\Create.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Event\Edit.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\ASPNetProject.csprojAssemblyReference.cache
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Event\Delete.cshtml.g.cs

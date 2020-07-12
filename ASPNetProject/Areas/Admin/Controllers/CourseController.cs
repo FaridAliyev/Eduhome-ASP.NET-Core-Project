@@ -60,8 +60,8 @@ namespace ASPNetProject.Areas.Admin.Controllers
         {
             if (!courseVM.Course.Photo.isImage())
             {
-                ModelState.AddModelError("Photo", "Please pick a file matching the format!");
-                return View();
+                ModelState.AddModelError(string.Empty, "Please pick a file matching the format!");
+                return View(courseVM);
             }
             Course course = courseVM.Course;
             course.CourseFeature = courseVM.CourseFeature;
@@ -109,7 +109,7 @@ namespace ASPNetProject.Areas.Admin.Controllers
             {
                 if (!File.isImage())
                 {
-                    ModelState.AddModelError("File", "Please pick a file matching the format!");
+                    ModelState.AddModelError(string.Empty, "Please pick a file matching the format!");
                     return View(courseVM);
                 }
                 Extensions.DeleteImg(_env.WebRootPath, "img/course", course.Image);

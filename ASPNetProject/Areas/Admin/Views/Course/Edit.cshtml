@@ -7,7 +7,7 @@
     <div class="col-md-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">Create Course</h4>
+                <h4 class="card-title">Edit Course</h4>
                 <div class="text-danger" asp-validation-summary="ModelOnly"></div>
                 <form class="forms-sample" method="post" enctype="multipart/form-data">
                     <div class="row">
@@ -21,8 +21,7 @@
                         <div class="col-md-5">
                             <div class="form-group">
                                 <label asp-for="@Model.Course.Photo"></label>
-                                <input type="file" id="file" name="File" class="form-control" placeholder="Name">
-                                
+                                <input type="file" id="file" name="File" class="form-control" placeholder="Name">                             
                             </div>
                         </div>
                         <div class="col-md-2">
@@ -63,7 +62,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label asp-for="@Model.CourseFeature.StartDate"></label>
-                                <input asp-for="@Model.CourseFeature.StartDate" class="form-control hasDatepicker" placeholder="StartingDate">
+                                <input asp-for="@Model.CourseFeature.StartDate" class="form-control" placeholder="StartingDate">
                                 <span asp-validation-for="@Model.CourseFeature.StartDate" class="text-danger"></span>
                             </div>
                         </div>

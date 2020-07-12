@@ -1,0 +1,97 @@
+﻿@model EventVM
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="row">
+    <div class="col-md-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Create Event</h4>
+                <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+                <form class="forms-sample" method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="@Model.Event.Name"></label>
+                                <input asp-for="@Model.Event.Name" class="form-control" placeholder="Name">
+                                <span asp-validation-for="@Model.Event.Name" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="@Model.Event.Photo"></label>
+                                <input asp-for="@Model.Event.Photo" class="form-control" placeholder="Name">
+                                <span asp-validation-for="@Model.Event.Photo" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label asp-for="@Model.Event.Description"></label>
+                                <textarea asp-for="@Model.Event.Description" id="editor"></textarea>
+                                <span asp-validation-for="@Model.Event.Description" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label asp-for="@Model.Event.Date">Start Date and Time</label>
+                                <input type="datetime-local" name="DateTime" class="form-control" placeholder="Start Date and Time">
+                                <span asp-validation-for="@Model.Event.Date" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label asp-for="@Model.Event.Time">Ending Time</label>
+                                <input type="time" name="Time" class="form-control" placeholder="Ending Time">
+                                <span asp-validation-for="@Model.Event.Time" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label asp-for="@Model.Event.Venue"></label>
+                                <input asp-for="@Model.Event.Venue" class="form-control" placeholder="Venue">
+                                <span asp-validation-for="@Model.Event.Venue" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="states[]">Select Speakers</label>
+                                <select class="js-example-basic-multiple" name="states[]" multiple="multiple" style="width:100%">
+                                    @foreach (Speaker item in Model.Speakers)
+                                    {
+                                        <option value="@item.Id">@item.Fullname</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                    <a asp-action="Index" class="btn btn-dark btn-icon-text">
+                        Go Back
+                        <i class="mdi mdi-keyboard-backspace btn-icon-append"></i>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <partial name="_Validation" />;
+    <script src="https://cdn.ckeditor.com/ckeditor5/20.0.0/classic/ckeditor.js"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#editor'))
+            .catch(error => {
+                console.error(error);
+            });
+        $(document).ready(function() {
+        $('.js-example-basic-multiple').select2();
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+}
+

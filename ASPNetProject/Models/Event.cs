@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -22,5 +24,8 @@ namespace ASPNetProject.Models
         [StringLength(300)]
         public string Venue { get; set; }
         public ICollection<EventSpeaker> EventSpeakers { get; set; }
+        [NotMapped]
+        [Required]
+        public IFormFile Photo { get; set; }
     }
 }

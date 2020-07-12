@@ -69,9 +69,9 @@ using ASPNetProject.ViewModels;
                             ");
             EndContext();
             BeginContext(338, 96, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f7fd2316ebf14ca4adc39908abf73580", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fca22c9418e0493d8aef1fe2353a4731", async() => {
                 BeginContext(382, 48, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "d3e2996c5285441998fcddcc61f98097", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "8bd3dc8da99641c99d5eacc8c7764489", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -174,7 +174,7 @@ WriteAttributeValue("", 968, Model.Twitter, 968, 14, false);
                             <li>");
             EndContext();
             BeginContext(1500, 59, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b12313693743459eb09982df09a46a78", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "170c4306a45d45edbf355c38e536d6c2", async() => {
                 BeginContext(1545, 10, true);
                 WriteLiteral("Event List");
                 EndContext();
@@ -208,7 +208,7 @@ WriteAttributeValue("", 968, Model.Twitter, 968, 14, false);
                             <li>");
             EndContext();
             BeginContext(2005, 61, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9a6ea180c1f04a27a6f3ff4a687af3b8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b21a5c938c1641bb85223c0091b9c5cc", async() => {
                 BeginContext(2051, 11, true);
                 WriteLiteral("our courses");
                 EndContext();
@@ -232,7 +232,7 @@ WriteAttributeValue("", 968, Model.Twitter, 968, 14, false);
             WriteLiteral("</li>\r\n                            <li>");
             EndContext();
             BeginContext(2105, 57, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "96b2dadecc2842c08495caa9f82db445", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7ef81f836d654b338a45613936e4145d", async() => {
                 BeginContext(2150, 8, true);
                 WriteLiteral("about us");
                 EndContext();
@@ -256,7 +256,7 @@ WriteAttributeValue("", 968, Model.Twitter, 968, 14, false);
             WriteLiteral("</li>\r\n                            <li>");
             EndContext();
             BeginContext(2201, 73, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb1b72f5802740659a843ececf0da924", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "53341e45ef1a40c9b046386b7d069605", async() => {
                 BeginContext(2248, 22, true);
                 WriteLiteral("teachers &amp; faculty");
                 EndContext();
@@ -280,7 +280,7 @@ WriteAttributeValue("", 968, Model.Twitter, 968, 14, false);
             WriteLiteral("</li>\r\n                            <li><a href=\"#\">teams &amp; conditions</a></li>\r\n                            <li>");
             EndContext();
             BeginContext(2390, 59, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "48f34744d10040c693e72082ace988b2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2901e4f3d0aa4893b7ee40fef4f3461a", async() => {
                 BeginContext(2435, 10, true);
                 WriteLiteral("our events");
                 EndContext();
