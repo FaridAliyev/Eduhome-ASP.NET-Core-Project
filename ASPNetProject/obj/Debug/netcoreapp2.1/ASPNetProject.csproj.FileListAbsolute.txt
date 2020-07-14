@@ -72,3 +72,9 @@ E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Blog\D
 E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Blog\Create.cshtml.g.cs
 E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Blog\Edit.cshtml.g.cs
 E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Blog\Delete.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Acc\Index.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Acc\Create.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Acc\Edit.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Acc\Delete.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Acc\Blocked.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Acc\AdminUsers.cshtml.g.cs

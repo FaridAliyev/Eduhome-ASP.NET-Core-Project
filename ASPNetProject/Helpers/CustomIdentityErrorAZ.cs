@@ -43,5 +43,15 @@ namespace ASPNetProject.Helpers
                 Description = $"Parolda ən az 1 kiçik hərf olmalıdır!"
             };
         }
+
+        public override IdentityError DuplicateEmail(string email)
+        {
+            return new IdentityError
+            {
+                Code = nameof(DuplicateEmail),
+                Description = $"Bu adda email mövcuddur!"
+            };
+        }
+
     }
 }

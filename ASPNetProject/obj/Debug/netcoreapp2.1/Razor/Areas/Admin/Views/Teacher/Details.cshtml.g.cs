@@ -75,7 +75,7 @@ using ASPNetProject.Areas.Admin.ViewModels;
                         ");
             EndContext();
             BeginContext(327, 93, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "57fae5cf22b24e29b508bbb43c288066", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "5521062cb9204939a51a4a8b6b92a5ba", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -534,7 +534,7 @@ WriteAttributeValue(" ", 7951, Model.Teacher.Skill.Communication, 7952, 34, fals
                 ");
             EndContext();
             BeginContext(8525, 188, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3b4ac771f19b451fa4b0d72a406bd4c2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8daa2ee9464b40a193c869aa21f542f3", async() => {
                 BeginContext(8582, 127, true);
                 WriteLiteral("\r\n                    Go Back\r\n                    <i class=\"mdi mdi-keyboard-backspace btn-icon-append\"></i>\r\n                ");
                 EndContext();
