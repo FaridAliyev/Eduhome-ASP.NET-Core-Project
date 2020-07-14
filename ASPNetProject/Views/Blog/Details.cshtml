@@ -32,9 +32,9 @@
                     <div class="blog-details-content">
                         <h2>@Model.Blog.Title </h2>
                         <h6>By @Model.Blog.PostedBy  /  @Model.Blog.Date  /  <i class="fa fa-comments-o"></i> 4</h6>
-                        <p>@Model.Blog.Description</p>
-                        <p>@Model.Blog.Description</p>
-                        <p class="quote">@Model.Blog.Quote</p>           
+                        <p>@Html.Raw(Model.Blog.Description)</p>
+                        <p>@Html.Raw(Model.Blog.Description)</p>
+                        <p class="quote">@Html.Raw(Model.Blog.Quote)</p>           
                     </div>
                     <div class="reply-area">
                         <h3>LEAVE A REPLY</h3>

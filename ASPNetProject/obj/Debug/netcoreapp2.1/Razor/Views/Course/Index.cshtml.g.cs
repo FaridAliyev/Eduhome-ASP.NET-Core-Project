@@ -101,7 +101,7 @@ WriteAttributeValue("", 197, Url.Content("~/img/banner/"+Model.Background.Image)
                     ");
             EndContext();
             BeginContext(1027, 272, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6a0418073fbb42f0918eb5a859d6bf96", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0f2a2f76bbe4bc1ad3c602edbe200b2", async() => {
                 BeginContext(1102, 190, true);
                 WriteLiteral("\r\n                        <input type=\"search\" placeholder=\"Search...\" name=\"search\" autocomplete=\"off\"/>\r\n                        <button type=\"submit\">search</button>\r\n                    ");
                 EndContext();

@@ -126,7 +126,7 @@ WriteAttributeValue("", 193, Url.Content("~/img/banner/"+Model.Background.Image)
             WriteLiteral("</p>\r\n                    ");
             EndContext();
             BeginContext(1115, 82, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bc7d2396405a45379fed4fe4e7f66bdd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d6b0d794b8d84701b5284719f5c370b2", async() => {
                 BeginContext(1181, 12, true);
                 WriteLiteral("view courses");
                 EndContext();

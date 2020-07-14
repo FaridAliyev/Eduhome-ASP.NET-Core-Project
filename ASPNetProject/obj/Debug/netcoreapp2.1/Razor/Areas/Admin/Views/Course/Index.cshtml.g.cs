@@ -80,7 +80,7 @@ using ASPNetProject.Areas.Admin.ViewModels;
                     ");
             EndContext();
             BeginContext(438, 189, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3c4a36ee04e1448ebadea9ca5e751119", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "11a5da2527574d419d0973039c9d0f45", async() => {
                 BeginContext(499, 124, true);
                 WriteLiteral("\r\n                        Create\r\n                        <i class=\"mdi mdi-apps btn-icon-append\"></i>\r\n                    ");
                 EndContext();
@@ -136,7 +136,7 @@ using ASPNetProject.Areas.Admin.ViewModels;
             WriteLiteral("\r\n                                        </td>\r\n                                        <td>\r\n                                            ");
             EndContext();
             BeginContext(1594, 303, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3ac19c6c1a4d42ee947f6c5a6ee808a0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cb3e4b4bf4b94a20b3d1c0508c19d65c", async() => {
                 BeginContext(1680, 213, true);
                 WriteLiteral("\r\n                                                Details\r\n                                                <i class=\"mdi mdi-account-card-details btn-icon-append\"></i>\r\n                                            ");
                 EndContext();
@@ -172,7 +172,7 @@ using ASPNetProject.Areas.Admin.ViewModels;
             WriteLiteral("\r\n                                            ");
             EndContext();
             BeginContext(1943, 283, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "041c3c357cfd48cfba089835f18a96bc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c0a736a2c4d44c76948f4d1d2dab47ca", async() => {
                 BeginContext(2026, 196, true);
                 WriteLiteral("\r\n                                                Edit\r\n                                                <i class=\"mdi mdi-pencil btn-icon-append\"></i>\r\n                                            ");
                 EndContext();
@@ -208,7 +208,7 @@ using ASPNetProject.Areas.Admin.ViewModels;
             WriteLiteral("\r\n                                            ");
             EndContext();
             BeginContext(2272, 286, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a1a0013436874a94869747b633987059", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "585d6b82814d44a08a35d0651b1257b6", async() => {
                 BeginContext(2356, 198, true);
                 WriteLiteral("\r\n                                                Delete\r\n                                                <i class=\"mdi mdi-delete btn-icon-append\"></i>\r\n                                            ");
                 EndContext();

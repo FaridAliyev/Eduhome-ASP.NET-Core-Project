@@ -34,7 +34,7 @@
                     <h2>@Model.Teacher.Fullname</h2>
                     <h5>@Model.Teacher.TeacherInfo.Qualification</h5>
                     <h4>about me</h4>
-                    <p>@Model.Teacher.TeacherInfo.About</p>
+                    <p>@Html.Raw(Model.Teacher.TeacherInfo.About)</p>
                     <ul>
                         <li><span>degree: </span>@foreach (TeacherDegree item in Model.TeacherDegrees)
                         {

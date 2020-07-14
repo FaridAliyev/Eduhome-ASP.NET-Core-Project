@@ -61,7 +61,7 @@ namespace ASPNetProject.Areas.Admin.Controllers
             if (!courseVM.Course.Photo.isImage())
             {
                 ModelState.AddModelError(string.Empty, "Please pick a file matching the format!");
-                return View(courseVM);
+                return View();
             }
             Course course = courseVM.Course;
             course.CourseFeature = courseVM.CourseFeature;
@@ -110,7 +110,12 @@ namespace ASPNetProject.Areas.Admin.Controllers
                 if (!File.isImage())
                 {
                     ModelState.AddModelError(string.Empty, "Please pick a file matching the format!");
-                    return View(courseVM);
+                    return View(new CourseVM
+                    {
+                        Course = course,
+                        CourseDetail = _db.CourseDetails.FirstOrDefault(cd => cd.CourseId == course.Id),
+                        CourseFeature = _db.CourseFeatures.FirstOrDefault(cf => cf.CourseId == course.Id)
+                    });
                 }
                 Extensions.DeleteImg(_env.WebRootPath, "img/course", course.Image);
                 course.Image = await File.SaveImg(_env.WebRootPath, "img/course");

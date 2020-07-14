@@ -1,0 +1,92 @@
+﻿@model Blog
+@{
+    ViewData["Title"] = "Edit Blog";
+}
+
+<div class="row">
+    <div class="col-md-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Create Blog</h4>
+                <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+                <form class="forms-sample" method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <label asp-for="@Model.Title"></label>
+                                <input asp-for="@Model.Title" class="form-control" placeholder="Title">
+                                <span asp-validation-for="@Model.Title" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <label asp-for="@Model.Photo"></label>
+                                <input type="file" id="file" name="File" class="form-control" placeholder="Photo">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="~/img/blog/@Model.Image" alt="Current Photo" style="width:100%" />
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label asp-for="@Model.Description"></label>
+                                <textarea asp-for="@Model.Description" id="editor1"></textarea>
+                                <span asp-validation-for="@Model.Description" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label asp-for="@Model.Quote"></label>
+                                <textarea asp-for="@Model.Quote" id="editor2"></textarea>
+                                <span asp-validation-for="@Model.Quote" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label asp-for="@Model.PostedBy">Posted By</label>
+                                <input asp-for="@Model.PostedBy" class="form-control" placeholder="Posted by">
+                                <span asp-validation-for="@Model.PostedBy" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label asp-for="@Model.Date"></label>
+                                <input asp-for="@Model.Date" readonly class="form-control" placeholder="Date">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label asp-for="@Model.Date">Choose new Date (leave empty if you dont want to change it)</label>
+                                <input type="date" name="DateTime" class="form-control" placeholder="Date">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                    <a asp-action="Index" class="btn btn-dark btn-icon-text">
+                        Go Back
+                        <i class="mdi mdi-keyboard-backspace btn-icon-append"></i>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts{
+    <partial name="_Validation" />;
+    <script src="https://cdn.ckeditor.com/ckeditor5/20.0.0/classic/ckeditor.js"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#editor1'))
+                .catch(error => {
+                    console.error(error);
+                });
+        ClassicEditor
+        .create(document.querySelector('#editor2'))
+        .catch(error => {
+            console.error(error);
+        });
+    </script>
+}
+

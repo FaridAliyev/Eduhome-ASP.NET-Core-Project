@@ -11,18 +11,21 @@
                 <div class="text-danger" asp-validation-summary="ModelOnly"></div>
                 <form class="forms-sample" method="post" enctype="multipart/form-data">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-5">
                             <div class="form-group">
                                 <label asp-for="@Model.Event.Name"></label>
                                 <input asp-for="@Model.Event.Name" class="form-control" placeholder="Name">
                                 <span asp-validation-for="@Model.Event.Name" class="text-danger"></span>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-5">
                             <div class="form-group">
                                 <label asp-for="@Model.Event.Photo"></label>
                                 <input type="file" id="file" name="File" class="form-control" placeholder="Name">
                             </div>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="~/img/event/@Model.Event.Image" alt="Current Photo" style="width:100%" />
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">

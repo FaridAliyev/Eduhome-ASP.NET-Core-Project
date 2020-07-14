@@ -62,3 +62,13 @@ E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Event\
 E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Event\Edit.cshtml.g.cs
 E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\ASPNetProject.csprojAssemblyReference.cache
 E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Event\Delete.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Teacher\Index.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Teacher\Details.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Teacher\Create.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Teacher\Edit.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Teacher\Delete.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Blog\Index.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Blog\Details.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Blog\Create.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Blog\Edit.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Blog\Delete.cshtml.g.cs

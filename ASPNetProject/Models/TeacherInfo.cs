@@ -14,7 +14,7 @@ namespace ASPNetProject.Models
         [Required, StringLength(800)]
         public string About { get; set; }
         public int ExperienceYear { get; set; }
-        [Required, StringLength(200)]
+        [Required, StringLength(200), EmailAddress, DataType(DataType.EmailAddress)]
         public string Email { get; set; }
         [Required, StringLength(200)]
         public string Phone { get; set; }
