@@ -93,16 +93,16 @@
                         <h3>latest post</h3>
                         @foreach (Blog item in Model.SideBlogs)
                         {
-                            <div class="single-post mb-30">
+                            <div class="single-post mb-30" style="display:flex">
                                 <div class="single-post-img">
-                                    <a asp-controller="Blog" asp-action="Details" asp-route-id="@item.Id">
+                                    <a asp-controller="Blog" asp-action="Details" asp-route-id="@item.Id" style="float:none">
                                         <img src="~/img/blog/@item.Image" alt="post" style="width:95px;height:100px">
                                         <div class="blog-hover">
                                             <i class="fa fa-link"></i>
                                         </div>
                                     </a>
                                 </div>
-                                <div class="single-post-content">
+                                <div class="single-post-content" style="width:150px;height:100px;max-width:150px;max-height:150px">
                                     <h4><a asp-controller="Blog" asp-action="Details" asp-route-id="@item.Id">@item.Title</a></h4>
                                     <p>By @item.PostedBy  /  @item.Date</p>
                                 </div>

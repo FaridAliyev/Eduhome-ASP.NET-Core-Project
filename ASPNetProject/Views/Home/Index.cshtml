@@ -170,10 +170,10 @@
                         <div class="single-testimonial">
                             <div class="testimonial-info">
                                 <div class="testimonial-img">
-                                    <img src="img/testimonial/@item.Image" alt="testimonial">
+                                    <img src="~/img/testimonial/@item.Image" alt="testimonial">
                                 </div>
                                 <div class="testimonial-content">
-                                    <p>@item.Review</p>
+                                    <p>@Html.Raw(item.Review)</p>
                                     <h4>@item.Fullname</h4>
                                     <h5>@item.Duty, @item.Qualification</h5>
                                 </div>

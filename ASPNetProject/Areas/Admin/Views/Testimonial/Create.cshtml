@@ -1,0 +1,73 @@
+﻿@model Testimonial
+@{
+    ViewData["Title"] = "Create New Testimonial";
+}
+
+<div class="row">
+    <div class="col-md-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Create Testimonial</h4>
+                <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+                <form class="forms-sample" method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="@Model.Fullname"></label>
+                                <input asp-for="@Model.Fullname" class="form-control" placeholder="Fullname">
+                                <span asp-validation-for="@Model.Fullname" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="@Model.Photo"></label>
+                                <input asp-for="@Model.Photo" class="form-control" placeholder="Name">
+                                <span asp-validation-for="@Model.Photo" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label asp-for="@Model.Review"></label>
+                                <textarea asp-for="@Model.Review" id="editor"></textarea>
+                                <span asp-validation-for="@Model.Review" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="@Model.Duty"></label>
+                                <input asp-for="@Model.Duty" class="form-control" placeholder="Duty">
+                                <span asp-validation-for="@Model.Duty" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="@Model.Qualification"></label>
+                                <input asp-for="@Model.Qualification" class="form-control" placeholder="Qualification">
+                                <span asp-validation-for="@Model.Qualification" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                    <a asp-action="Index" class="btn btn-dark btn-icon-text">
+                        Go Back
+                        <i class="mdi mdi-keyboard-backspace btn-icon-append"></i>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts{
+    <partial name="_Validation" />
+    <script src="https://cdn.ckeditor.com/ckeditor5/20.0.0/classic/ckeditor.js"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#editor'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+}
+

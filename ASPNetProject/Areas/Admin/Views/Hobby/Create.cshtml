@@ -1,0 +1,36 @@
+﻿@model Hobbie
+@{
+    ViewData["Title"] = "Create New Hobby";
+}
+
+    <div class="row">
+        <div class="col-md-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Create Hobby</h4>
+                    <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+                    <form class="forms-sample" method="post">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label asp-for="@Model.Name"></label>
+                                    <input asp-for="@Model.Name" class="form-control" placeholder="Name">
+                                    <span asp-validation-for="@Model.Name" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                        <a asp-action="Index" class="btn btn-dark btn-icon-text">
+                            Go Back
+                            <i class="mdi mdi-keyboard-backspace btn-icon-append"></i>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+@section Scripts{
+    <partial name="_Validation" />
+}
+

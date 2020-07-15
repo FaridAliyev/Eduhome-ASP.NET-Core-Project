@@ -93,10 +93,6 @@ namespace ASPNetProject.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            if (user == await _userManager.GetUserAsync(User))
-            {
-                return NotFound();
-            }
             ApUserVM model = new ApUserVM()
             {
                 Fullname = user.Fullname,

@@ -1,0 +1,14 @@
+﻿@model Hobbie
+@{
+    ViewData["Title"] = "Delete Hobby";
+}
+
+<h1>@Model.Name</h1>
+<form method="post">
+    <button type="submit" class="btn btn-danger mr-2">Delete</button>
+    <a asp-action="Index" class="btn btn-dark btn-icon-text">
+        Go Back
+        <i class="mdi mdi-keyboard-backspace btn-icon-append"></i>
+    </a>
+</form>
+

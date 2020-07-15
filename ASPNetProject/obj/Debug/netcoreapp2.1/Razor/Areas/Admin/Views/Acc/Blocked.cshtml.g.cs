@@ -159,12 +159,12 @@ using ASPNetProject.Areas.Admin.ViewModels;
             WriteLiteral("\r\n                                            </td>\r\n                                            <td>\r\n                                                ");
             EndContext();
             BeginContext(2473, 498, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aff2d01594284bee9d47bfc805597c22", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "937c459e314340fba121e1e47d52fda3", async() => {
                 BeginContext(2514, 54, true);
                 WriteLiteral("\r\n                                                    ");
                 EndContext();
                 BeginContext(2568, 346, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cd53d6642cdc45e5843c042824cdd314", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b6e0c6c80d09430b9f0f97bcca326351", async() => {
                     BeginContext(2655, 173, true);
                     WriteLiteral("\r\n                                                        Activate\r\n                                                        <i class=\"mdi mdi-account-check btn-icon-append\">");
                     EndContext();

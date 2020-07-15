@@ -109,12 +109,12 @@ using ASPNetProject.Areas.Admin.ViewModels;
             WriteLiteral("</p>\r\n        ");
             EndContext();
             BeginContext(267, 306, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9de7347b86ad4f4eabf99d16b80536dc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "513fd677f8b14368a6722ac5b7c3e517", async() => {
                 BeginContext(287, 93, true);
                 WriteLiteral("\r\n            <button type=\"submit\" class=\"btn btn-danger mr-2\">Delete</button>\r\n            ");
                 EndContext();
                 BeginContext(380, 176, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "291fafe674074a2191f55d1c35106b5c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4d599f7a3469407f8e9bf812fb0946f1", async() => {
                     BeginContext(437, 115, true);
                     WriteLiteral("\r\n                Go Back\r\n                <i class=\"mdi mdi-keyboard-backspace btn-icon-append\"></i>\r\n            ");
                     EndContext();

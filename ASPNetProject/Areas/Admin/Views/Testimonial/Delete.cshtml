@@ -1,0 +1,29 @@
+﻿@model Testimonial
+@{
+    ViewData["Title"] = "Delete Testimonial";
+}
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="single-testimonial">
+                <div class="testimonial-info">
+                    <div class="testimonial-img">
+                        <img src="~/img/testimonial/@Model.Image" alt="testimonial">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>@Html.Raw(Model.Review)</p>
+                        <h4>@Model.Fullname</h4>
+                        <h5>@Model.Duty, @Model.Qualification</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form method="post">
+            <button type="submit" class="btn btn-danger mr-2">Delete</button>
+            <a asp-action="Index" class="btn btn-dark btn-icon-text">
+                Go Back
+                <i class="mdi mdi-keyboard-backspace btn-icon-append"></i>
+            </a>
+        </form>
+    </div>
+
