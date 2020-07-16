@@ -13,5 +13,6 @@ namespace ASPNetProject.ViewModels
         public IEnumerable<Blog> Blogs { get; set; }
         public IEnumerable<Blog> SideBlogs { get; set; }
         public Blog Blog { get; set; }
+        public Message Message { get; set; }
     }
 }

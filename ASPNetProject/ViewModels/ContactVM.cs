@@ -10,5 +10,6 @@ namespace ASPNetProject.ViewModels
     {
         public Background Background { get; set; }
         public Bio Bio { get; set; }
+        public Message Message { get; set; }
     }
 }

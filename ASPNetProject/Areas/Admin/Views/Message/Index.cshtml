@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Message>
+@{
+    ViewData["Title"] = "Messages";
+}
+
+    <div class="row">
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Messages</h4>
+                    <a asp-action="New" class="btn btn-primary btn-icon-text">
+                        Show only new
+                        <i class="mdi mdi-new-box btn-icon-append"></i>
+                    </a>
+                    @foreach (Message item in Model)
+                    {
+                        if (!item.Read)
+                        {
+                            <a asp-route-returnUrl="@string.Format("{0}{1}",Context.Request.Path, Context.Request.QueryString)" asp-action="MarkAllAsRead" class="btn btn-warning btn-icon-text" style="float:right">
+                                Mark all as read
+                                <i class="mdi mdi-check-all btn-icon-append"></i>
+                            </a>
+                            break;
+                        }
+                        
+                    }
+                    <div class="table-responsive pt-3">
+                        <table class="table">
+                            <tbody>
+                                @if (Model.Count() > 0)
+                                {
+                                    @foreach (Message item in Model)
+                                    {
+                                        <tr>
+                                            @if (item.Read)
+                                            {
+                                                <td><a style="text-decoration:none;color:black" asp-route-returnUrl="@ViewContext.RouteData.Values["Action"].ToString()" asp-action="Details" asp-route-id="@item.Id">@item.Name</a></td>
+                                                <td><a style="text-decoration:none;color:black" asp-route-returnUrl="@ViewContext.RouteData.Values["Action"].ToString()" asp-action="Details" asp-route-id="@item.Id">@item.Subject <span>-</span> @item.Note</a></td>
+                                                <td></td>
+                                            }
+                                            else
+                                            {
+                                                <td><a style="text-decoration:none;color:black" asp-route-returnUrl="@ViewContext.RouteData.Values["Action"].ToString()" asp-action="Details" asp-route-id="@item.Id"><b>@item.Name</b></a></td>
+                                                <td><a style="text-decoration:none;color:black" asp-route-returnUrl="@ViewContext.RouteData.Values["Action"].ToString()" asp-action="Details" asp-route-id="@item.Id"><b>@item.Subject</b> <span>-</span> @item.Note</a></td>
+                                                <td><a asp-route-returnUrl="@string.Format("{0}{1}",Context.Request.Path, Context.Request.QueryString)" asp-action="MarkAsRead" asp-route-id="@item.Id" class="btn btn-success btn-icon-text"><i class="mdi mdi-check-all btn-icon-append"></i></a></td>
+                                            }
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td><h1>No Messages</h1></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+

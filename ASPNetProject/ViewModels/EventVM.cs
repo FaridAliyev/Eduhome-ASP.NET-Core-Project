@@ -15,5 +15,6 @@ namespace ASPNetProject.ViewModels
         public Event Event { get; set; }
         public IEnumerable<Course> Courses { get; set; }
         public IEnumerable<Blog> SideBlogs { get; set; }
+        public Message Message { get; set; }
     }
 }

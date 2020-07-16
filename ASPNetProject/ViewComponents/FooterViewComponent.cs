@@ -1,5 +1,6 @@
 ﻿using ASPNetProject.DAL;
 using ASPNetProject.Models;
+using ASPNetProject.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,11 @@ namespace ASPNetProject.ViewComponents
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            Bio model = _db.Bios.FirstOrDefault();
+            FooterVM model = new FooterVM()
+            {
+                Bio = _db.Bios.FirstOrDefault()
+            };
+            
             return View(await Task.FromResult(model));
         }
     }

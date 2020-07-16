@@ -38,5 +38,7 @@ namespace ASPNetProject.DAL
         public DbSet<NoticeVideo> NoticeVideos { get; set; }
         public DbSet<NoticeBoard> NoticeBoards { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
+        public DbSet<Subscriber> Subscribers { get; set; }
+        public DbSet<Message> Messages { get; set; }
     }
 }

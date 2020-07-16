@@ -64,7 +64,7 @@ using ASPNetProject.ViewModels;
             WriteLiteral("    <li class=\"list-group-item\" style=\"padding-bottom:13px\">\r\n        ");
             EndContext();
             BeginContext(134, 95, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0e54d57703e04032a71a1e6da9f31432", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eec0daa95d25405bb5e5023dcdbf0087", async() => {
                 BeginContext(206, 19, false);
 #line 6 "E:\Projects\ASPNetProject\Views\Shared\_EventSearch.cshtml"
                                                                           Write(item.Name.ToUpper());

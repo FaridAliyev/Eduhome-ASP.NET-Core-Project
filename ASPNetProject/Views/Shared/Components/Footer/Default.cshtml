@@ -1,5 +1,36 @@
-﻿@model Bio
-
+﻿@model FooterVM
+<!-- Subscribe Start -->
+<div class="subscribe-area pt-60 pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="subscribe-content section-title text-center">
+                    <h2>subscribe our newsletter</h2>
+                    <p>I must explain to you how all this mistaken idea </p>
+                </div>
+                <div class="newsletter-form mc_embed_signup">
+                    <form method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate">
+                        <div id="mc_embed_signup_scroll" class="mc-form">
+                            <input asp-for="@Model.Subscriber.Email" class="email" placeholder="Enter your e-mail address" required>
+                            <span asp-validation-for="@Model.Subscriber.Email" class="text-danger"></span>
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div class="mc-news" aria-hidden="true"><input type="text" name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef" tabindex="-1" value=""></div>
+                            <button asp-controller="Contact" asp-action="Subscribe" asp-route-returnUrl="@string.Format("{0}{1}",Context.Request.Path, Context.Request.QueryString)" id="mc-embedded-subscribe" class="default-btn" type="submit" name="subscribe"><span>subscribe</span></button>
+                        </div>
+                    </form>
+                    <!-- mailchimp-alerts Start -->
+                    <div class="mailchimp-alerts">
+                        <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
+                        <div class="mailchimp-success"></div><!-- mailchimp-success end -->
+                        <div class="mailchimp-error"></div><!-- mailchimp-error end -->
+                    </div>
+                    <!-- mailchimp-alerts end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Subscribe End -->
 <footer class="footer-area">
     <div class="main-footer">
         <div class="container">
@@ -7,15 +38,15 @@
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="single-widget pr-60">
                         <div class="footer-logo pb-25">
-                            <a asp-controller="Home" asp-action="Index"><img src="~/img/logo/@Model.Logo" alt="eduhome"></a>
+                            <a asp-controller="Home" asp-action="Index"><img src="~/img/logo/@Model.Bio.Logo" alt="eduhome"></a>
                         </div>
-                        <p>@Model.Description</p>
+                        <p>@Model.Bio.Description</p>
                         <div class="footer-social">
                             <ul>
-                                <li><a href="@Model.Facebook"><i class="zmdi zmdi-facebook"></i></a></li>
-                                <li><a href="@Model.Pinterest"><i class="zmdi zmdi-pinterest"></i></a></li>
-                                <li><a href="@Model.Vimeo"><i class="zmdi zmdi-vimeo"></i></a></li>
-                                <li><a href="@Model.Twitter"><i class="zmdi zmdi-twitter"></i></a></li>
+                                <li><a href="@Model.Bio.Facebook"><i class="zmdi zmdi-facebook"></i></a></li>
+                                <li><a href="@Model.Bio.Pinterest"><i class="zmdi zmdi-pinterest"></i></a></li>
+                                <li><a href="@Model.Bio.Vimeo"><i class="zmdi zmdi-vimeo"></i></a></li>
+                                <li><a href="@Model.Bio.Twitter"><i class="zmdi zmdi-twitter"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -47,9 +78,9 @@
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="single-widget">
                         <h3>get in touch</h3>
-                        <p>Your address goes here, @Model.Address</p>
-                        <p>@Model.Phone<br>@Model.Phone</p>
-                        <p>@Model.ContactMail<br>@Model.Website</p>
+                        <p>Your address goes here, @Model.Bio.Address</p>
+                        <p>@Model.Bio.Phone<br>@Model.Bio.Phone</p>
+                        <p>@Model.Bio.ContactMail<br>@Model.Bio.Website</p>
                     </div>
                 </div>
             </div>
@@ -65,3 +96,4 @@
         </div>
     </div>
 </footer>
+

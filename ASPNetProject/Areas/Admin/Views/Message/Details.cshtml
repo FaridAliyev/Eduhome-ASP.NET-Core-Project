@@ -1,0 +1,21 @@
+﻿@model Message
+@{
+    ViewData["Title"] = "Message Details";
+}
+
+<h2>@Model.Subject</h2>
+<h4 style="margin-top:20px">@Model.Name</h4>
+<h6>@Model.Email</h6>
+<p style="margin-top:10px">@Model.Note</p>
+
+
+<form method="post">
+    <a asp-action="@ViewBag.Return" class="btn btn-dark btn-icon-text">
+        Go Back
+        <i class="mdi mdi-keyboard-backspace btn-icon-append"></i>
+    </a>
+    <button type="submit" class="btn btn-danger mr-2">
+        Delete
+        <i class="mdi mdi-delete btn-icon-append"></i>
+    </button>
+</form>
