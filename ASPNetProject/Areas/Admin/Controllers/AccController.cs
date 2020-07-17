@@ -272,5 +272,26 @@ namespace ASPNetProject.Areas.Admin.Controllers
             }
             return View(userVMs);
         }
+
+        public async Task<IActionResult> Search(string term)
+        {
+            List<User> users = _userManager.Users.Where(u => u.Deleted == false).ToList();
+            List<UserVM> model = new List<UserVM>();
+            foreach (User user in users)
+            {
+                if (user.UserName.Contains(term)||user.Email.Contains(term)||user.Fullname.Contains(term))
+                {
+                    model.Add(new UserVM
+                    {
+                        Id = user.Id,
+                        Fullname = user.Fullname,
+                        Username = user.UserName,
+                        Email = user.Email,
+                        Role = (await _userManager.GetRolesAsync(user))[0]
+                    });
+                }
+            }
+            return PartialView("_ApUserSearch", model);
+        }
     }
 }

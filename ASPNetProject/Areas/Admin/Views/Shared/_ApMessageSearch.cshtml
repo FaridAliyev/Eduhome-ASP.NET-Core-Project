@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Message>
+
+@foreach (Message item in Model)
+{
+    <tr>
+        @if (item.Read)
+        {
+            <td><a style="text-decoration:none;color:white" asp-action="Details" asp-route-id="@item.Id">@item.Name</a></td>
+            <td><a style="text-decoration:none;color:white" asp-action="Details" asp-route-id="@item.Id">@item.Subject <span>-</span> @item.Note</a></td>
+            <td></td>
+        }
+        else
+        {
+            <td><a style="text-decoration:none;color:greenyellow" asp-action="Details" asp-route-id="@item.Id"><b>@item.Name</b></a></td>
+            <td><a style="text-decoration:none;color:greenyellow" asp-action="Details" asp-route-id="@item.Id"><b>@item.Subject</b> <span>-</span> @item.Note</a></td>
+            <td><a asp-action="MarkAsRead" asp-route-id="@item.Id" class="btn btn-success btn-icon-text"><i class="mdi mdi-check-all btn-icon-append"></i></a></td>
+        }
+    </tr>
+}

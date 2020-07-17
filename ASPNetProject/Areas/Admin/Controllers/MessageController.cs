@@ -34,7 +34,14 @@ namespace ASPNetProject.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            ViewBag.Return = returnUrl;
+            if (string.IsNullOrEmpty(returnUrl))
+            {
+                ViewBag.Return = "Index";
+            }
+            else
+            {
+                ViewBag.Return = returnUrl;
+            }
             message.Read = true;
             await _db.SaveChangesAsync();
             return View(message);
@@ -77,6 +84,10 @@ namespace ASPNetProject.Areas.Admin.Controllers
             }
             message.Read = true;
             await _db.SaveChangesAsync();
+            if (string.IsNullOrEmpty(returnUrl))
+            {
+                return RedirectToAction("Index");
+            }
             return LocalRedirect(returnUrl);
         }
 
@@ -91,6 +102,12 @@ namespace ASPNetProject.Areas.Admin.Controllers
             }
             await _db.SaveChangesAsync();
             return LocalRedirect(returnUrl);
+        }
+
+        public IActionResult Search(string term)
+        {
+            var model = _db.Messages.Where(c => c.Name.Contains(term)||c.Email.Contains(term)||c.Subject.Contains(term)).Take(4);
+            return PartialView("_ApMessageSearch", model);
         }
     }
 }

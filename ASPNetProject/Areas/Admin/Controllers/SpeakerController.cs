@@ -140,5 +140,11 @@ namespace ASPNetProject.Areas.Admin.Controllers
             await _db.SaveChangesAsync();
             return RedirectToAction("Index");
         }
+
+        public IActionResult Search(string term)
+        {
+            var model = _db.Speakers.Where(c => c.Fullname.Contains(term)).Take(4);
+            return PartialView("_ApSpeakerSearch", model);
+        }
     }
 }

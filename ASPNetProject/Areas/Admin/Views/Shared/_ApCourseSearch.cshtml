@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Course>
+
+@foreach (Course item in Model)
+{
+    <tr>
+        <td>
+            @item.Name.ToUpper()
+        </td>
+        <td>
+            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-success btn-icon-text">
+                Details
+                <i class="mdi mdi-account-card-details btn-icon-append"></i>
+            </a>
+            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-icon-text">
+                Edit
+                <i class="mdi mdi-pencil btn-icon-append"></i>
+            </a>
+            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-icon-text">
+                Delete
+                <i class="mdi mdi-delete btn-icon-append"></i>
+            </a>
+        </td>
+    </tr>
+}

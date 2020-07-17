@@ -176,5 +176,11 @@ namespace ASPNetProject.Areas.Admin.Controllers
             await _db.SaveChangesAsync();
             return RedirectToAction("Index");
         }
+
+        public IActionResult Search(string term)
+        {
+            var model = _db.Courses.Where(c => c.Name.Contains(term)).Take(4);
+            return PartialView("_ApCourseSearch", model);
+        }
     }
 }

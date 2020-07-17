@@ -1,7 +1,16 @@
 ﻿
 @{
-    ViewData["Title"] = "AdminPanel";
+    ViewData["Title"] = "Admin Panel";
 }
 
 <h2>Hi, @User.Identity.Name</h2>
+@if (ViewBag.Check==7)
+{
+    <a id="undo" style="position:fixed; right:20px; bottom:100px;" asp-action="Undo" class="btn btn-danger btn-icon-text">
+        Undo
+        <i class="mdi mdi-undo btn-icon-append"></i>
+    </a>
+}
+
+
 

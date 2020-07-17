@@ -48,6 +48,7 @@
                                 <li class="nav-item"> <a class="nav-link" asp-area="Admin" asp-controller="Degree" asp-action="Index">Degree</a></li>
                                 <li class="nav-item"> <a class="nav-link" asp-area="Admin" asp-controller="Faculty" asp-action="Index">Faculty</a></li>
                                 <li class="nav-item"> <a class="nav-link" asp-area="Admin" asp-controller="Testimonial" asp-action="Index">Testimonial</a></li>
+                                <li class="nav-item"> <a class="nav-link" asp-area="Admin" asp-controller="Notice" asp-action="Index">Notice Board</a></li>
                             </ul>
                         </div>
                     </li>
@@ -131,7 +132,31 @@
     <script src="~/admin/js/jquery.dataTables.js"></script>
     <script src="~/admin/js/dataTables.bootstrap4.js"></script>
     <!-- End custom js for this page-->
+    <script>
+        let controller = $('#ctrl').val();
+        $('.search-field').keyup(function () {
+            let field = $(this);
+            let term = field.val();
+            if (term == "") {
+                field.next().children().eq(0).empty();
+            }
+            if (term.length > 0) {
+                $.ajax({
+                    url: "/Admin/" + controller + "/Search?term=" + term,
+                    type: "Get",
+                    success: function (response) {
+                        field.next().children().eq(0).empty();
+                        field.next().children().eq(0).append(response);
+                    }
+                });
+            }
+        });
 
+        setTimeout(undo, 10000);
+        function undo() {
+            $('#undo').hide();
+        }
+    </script>
     @RenderSection("Scripts", false)
 </body>
 

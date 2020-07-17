@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Testimonial>
+
+@foreach (Testimonial item in Model)
+{
+    <tr>
+        <td>
+            @item.Fullname.ToUpper()
+        </td>
+        <td>
+            <img src="~/img/testimonial/@item.Image" alt="Speaker" style="border-radius:0; width:100px;height:auto;" />
+        </td>
+        <td>
+            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-success btn-icon-text">
+                Details
+                <i class="mdi mdi-account-card-details btn-icon-append"></i>
+            </a>
+            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-icon-text">
+                Edit
+                <i class="mdi mdi-pencil btn-icon-append"></i>
+            </a>
+            @if (ViewBag.TestimonialCount > 1)
+            {
+                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-icon-text">
+                    Delete
+                    <i class="mdi mdi-delete btn-icon-append"></i>
+                </a>
+            }
+        </td>
+    </tr>
+}

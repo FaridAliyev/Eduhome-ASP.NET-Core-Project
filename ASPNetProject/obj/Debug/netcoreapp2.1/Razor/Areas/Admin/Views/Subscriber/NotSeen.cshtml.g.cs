@@ -71,7 +71,7 @@ using ASPNetProject.Areas.Admin.ViewModels;
             WriteLiteral("\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12 grid-margin stretch-card\">\r\n            <div class=\"card\">\r\n                <div class=\"card-body\">\r\n                    <h4 class=\"card-title\">Subscribers</h4>\r\n                    ");
             EndContext();
             BeginContext(312, 195, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f1e2393fed0c434fa2b4e7c6cdfca62d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "95f351d11c2b41c1bc45378b4b901d4e", async() => {
                 BeginContext(372, 131, true);
                 WriteLiteral("\r\n                        Show all\r\n                        <i class=\"mdi mdi-check-all btn-icon-append\"></i>\r\n                    ");
                 EndContext();
@@ -103,7 +103,7 @@ using ASPNetProject.Areas.Admin.ViewModels;
             WriteLiteral("                        ");
             EndContext();
             BeginContext(599, 340, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cf01bbbbb41d4798ad7b1436d11c2509", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d10a597ff9ae4d77ad31e32a7fb86400", async() => {
                 BeginContext(784, 151, true);
                 WriteLiteral("\r\n                            Mark all as seen\r\n                            <i class=\"mdi mdi-check-all btn-icon-append\"></i>\r\n                        ");
                 EndContext();
@@ -174,7 +174,7 @@ using ASPNetProject.Areas.Admin.ViewModels;
             WriteLiteral("</b></td>\r\n                                            <td>");
             EndContext();
             BeginContext(1479, 239, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "753ebed0f96f4878a42fd25ab6e06631", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d88cf6052cda4650b7224001b9d32702", async() => {
                 BeginContext(1665, 49, true);
                 WriteLiteral("<i class=\"mdi mdi-check-all btn-icon-append\"></i>");
                 EndContext();

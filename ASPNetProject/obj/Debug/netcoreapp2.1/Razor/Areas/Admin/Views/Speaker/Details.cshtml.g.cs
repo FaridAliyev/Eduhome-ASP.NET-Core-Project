@@ -68,7 +68,7 @@ using ASPNetProject.Areas.Admin.ViewModels;
             WriteLiteral("\r\n    <div class=\"single-speaker\">\r\n        <div class=\"speaker-img\">\r\n            ");
             EndContext();
             BeginContext(150, 50, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "3cd8595a1b704b048bfc5b09a26e3df9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef11bb3d72e7464194fac58006c75d2f", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -124,7 +124,7 @@ AddHtmlAttributeValue("", 172, Model.Image, 172, 12, false);
             WriteLiteral(" </p>\r\n        </div>\r\n    </div>\r\n    ");
             EndContext();
             BeginContext(373, 152, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "636d8c9fc763402184e7bc8b9ed95ee4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42a88580421444a5944f6358629788fe", async() => {
                 BeginContext(430, 91, true);
                 WriteLiteral("\r\n        Go Back\r\n        <i class=\"mdi mdi-keyboard-backspace btn-icon-append\"></i>\r\n    ");
                 EndContext();

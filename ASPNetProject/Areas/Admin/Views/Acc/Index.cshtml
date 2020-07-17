@@ -41,40 +41,33 @@
                             <tbody>
                                 @foreach (UserVM item in Model)
                                 {
-                                    <tr>
-                                        <td>
-                                            @if (item.Username == User.Identity.Name)
-                                            {
-                                                @item.Fullname.ToUpper() <span style="font-size:20px"><b>(You)</b></span>
-                                            }
-                                            else
-                                            {
+                                    @if (User.Identity.Name != item.Username)
+                                    {
+                                        <tr>
+                                            <td>
                                                 @item.Fullname.ToUpper()
-                                            }
-                                        </td>
-                                        <td>
-                                             @item.Username
-                                        </td>
-                                        <td>
-                                            @item.Email
-                                        </td>
-                                        <td>
-                                            @item.Role
-                                        </td>
-                                        <td>
-                                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-icon-text">
-                                                Edit
-                                                <i class="mdi mdi-pencil btn-icon-append"></i>
-                                            </a>
-                                            @if (item.Username != User.Identity.Name)
-                                            {
+                                            </td>
+                                            <td>
+                                                @item.Username
+                                            </td>
+                                            <td>
+                                                @item.Email
+                                            </td>
+                                            <td>
+                                                @item.Role
+                                            </td>
+                                            <td>
+                                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-icon-text">
+                                                    Edit
+                                                    <i class="mdi mdi-pencil btn-icon-append"></i>
+                                                </a>
                                                 <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-icon-text">
                                                     Delete
                                                     <i class="mdi mdi-delete btn-icon-append"></i>
                                                 </a>
-                                            }
-                                        </td>
-                                    </tr>
+                                            </td>
+                                        </tr>
+                                    }
                                 }
                             </tbody>
                         </table>

@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Faculty>
+
+@foreach (Faculty item in Model)
+{
+    <tr>
+        <td>
+            @item.Name.ToUpper()
+        </td>
+        <td>
+            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-icon-text">
+                Delete
+                <i class="mdi mdi-delete btn-icon-append"></i>
+            </a>
+        </td>
+    </tr>
+}

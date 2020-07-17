@@ -64,7 +64,7 @@ using ASPNetProject.ViewModels;
             WriteLiteral("    <div class=\"col-md-3 col-sm-4 col-xs-12\">\r\n        <div class=\"single-teacher mb-45\">\r\n            <div class=\"single-teacher-img\">\r\n                ");
             EndContext();
             BeginContext(225, 126, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f11cba7c3d2947b189b08b1d097ce99c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a5ca79b7e16d45d784db7b70fe872431", async() => {
                 BeginContext(298, 4, true);
                 WriteLiteral("<img");
                 EndContext();
@@ -112,7 +112,7 @@ WriteAttributeValue("", 320, item.Image, 320, 11, false);
             WriteLiteral("\r\n            </div>\r\n            <div class=\"single-teacher-content text-center\">\r\n                <h2>");
             EndContext();
             BeginContext(455, 91, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2e769ed0db2f475b81d656748daf5ee6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c98efaa1aa045f3a62d7bf57800b0ed", async() => {
                 BeginContext(529, 13, false);
 #line 11 "E:\Projects\ASPNetProject\Views\Shared\Components\Teachers\Default.cshtml"
                                                                                         Write(item.Fullname);

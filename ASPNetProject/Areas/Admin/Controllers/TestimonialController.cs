@@ -110,6 +110,10 @@ namespace ASPNetProject.Areas.Admin.Controllers
 
         public async Task<IActionResult> Delete(int? id)
         {
+            if (_db.Testimonials.Count()<=1)
+            {
+                return NotFound();
+            }
             if (id == null)
             {
                 return NotFound();
@@ -140,6 +144,13 @@ namespace ASPNetProject.Areas.Admin.Controllers
             _db.Testimonials.Remove(testimonial);
             await _db.SaveChangesAsync();
             return RedirectToAction("Index");
+        }
+
+        public IActionResult Search(string term)
+        {
+            ViewBag.TestimonialCount = _db.Testimonials.Count();
+            var model = _db.Testimonials.Where(c => c.Fullname.Contains(term)).Take(4);
+            return PartialView("_ApTestimonialSearch", model);
         }
     }
 }

@@ -38,13 +38,21 @@
                                 <select class="js-example-basic-single" name="role" style="width:100%">
                                     @foreach (var item in Model.Roles)
                                     {
-                                        if (item.ToString() == Model.Role)
+                                        if (User.Identity.Name == Model.Username)
                                         {
-                                            <option selected value="@item">@item</option>
+                                            <option selected value="Admin">Admin</option>
+                                            break;
                                         }
                                         else
                                         {
-                                            <option value="@item">@item</option>
+                                            if (item.ToString() == Model.Role)
+                                            {
+                                                <option selected value="@item">@item</option>
+                                            }
+                                            else
+                                            {
+                                                <option value="@item">@item</option>
+                                            }
                                         }
                                     }
                                 </select>

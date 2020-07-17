@@ -107,3 +107,16 @@ E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Messag
 E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Message\New.cshtml.g.cs
 E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Subscriber\Index.cshtml.g.cs
 E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Subscriber\NotSeen.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\_ApCourseSearch.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\_ApBlogSearch.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\_ApUserSearch.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\_ApDegreeSearch.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\_ApEventSearch.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\_ApFacultySearch.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\_ApHobbySearch.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\_ApMessageSearch.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\_ApSpeakerSearch.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\_ApSubscriberSearch.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\_ApTeacherSearch.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\_ApTestimonialSearch.cshtml.g.cs
+E:\Projects\ASPNetProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Notice\Index.cshtml.g.cs

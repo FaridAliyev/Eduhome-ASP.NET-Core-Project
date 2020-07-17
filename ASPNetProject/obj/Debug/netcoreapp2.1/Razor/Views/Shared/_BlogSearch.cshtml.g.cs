@@ -64,7 +64,7 @@ using ASPNetProject.ViewModels;
             WriteLiteral("    <li class=\"list-group-item\" style=\"padding-bottom:13px\">\r\n        ");
             EndContext();
             BeginContext(132, 95, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d8da0ce47a594137a7238a4d67e4c96c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eefbadc232f54a37947f2c63b5944696", async() => {
                 BeginContext(203, 20, false);
 #line 6 "E:\Projects\ASPNetProject\Views\Shared\_BlogSearch.cshtml"
                                                                          Write(item.Title.ToUpper());

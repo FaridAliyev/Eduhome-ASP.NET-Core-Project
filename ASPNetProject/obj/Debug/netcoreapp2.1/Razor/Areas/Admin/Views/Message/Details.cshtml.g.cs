@@ -108,12 +108,12 @@ Write(Model.Email);
             WriteLiteral("</p>\r\n\r\n\r\n");
             EndContext();
             BeginContext(211, 340, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "06e244c048824729a94ff2ff44bbd9fa", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7a36fcd1b2a349e69dc56dbdf2e50a76", async() => {
                 BeginContext(231, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(237, 162, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0f24808ed5454b94b927227e995ddc5a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b6084145032641cbaf8788c8664d7737", async() => {
                     BeginContext(304, 91, true);
                     WriteLiteral("\r\n        Go Back\r\n        <i class=\"mdi mdi-keyboard-backspace btn-icon-append\"></i>\r\n    ");
                     EndContext();

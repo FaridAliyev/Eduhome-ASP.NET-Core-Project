@@ -79,12 +79,12 @@ Write(Model.Name);
             WriteLiteral("</h1>\r\n");
             EndContext();
             BeginContext(88, 258, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9ab3d82c07144651b3965f27116a49be", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ba6bae3b579645fd9f23b7a0493dfead", async() => {
                 BeginContext(108, 77, true);
                 WriteLiteral("\r\n    <button type=\"submit\" class=\"btn btn-danger mr-2\">Delete</button>\r\n    ");
                 EndContext();
                 BeginContext(185, 152, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e632377d73d4e04bbb707495ea16af7", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9ba66c01b2244c8d93acb127702dbe54", async() => {
                     BeginContext(242, 91, true);
                     WriteLiteral("\r\n        Go Back\r\n        <i class=\"mdi mdi-keyboard-backspace btn-icon-append\"></i>\r\n    ");
                     EndContext();

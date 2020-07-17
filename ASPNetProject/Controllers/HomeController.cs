@@ -24,7 +24,7 @@ namespace ASPNetProject.Controllers
                 Services=_db.Services,
                 About=_db.About.FirstOrDefault(),
                 Video=_db.NoticeVideos.FirstOrDefault(),
-                NoticeBoards=_db.NoticeBoards,
+                NoticeBoards=_db.NoticeBoards.OrderByDescending(n=>n.Id),
                 Events=_db.Events.OrderByDescending(e=>e.Id).Take(2),
                 Testimonials=_db.Testimonials
             };

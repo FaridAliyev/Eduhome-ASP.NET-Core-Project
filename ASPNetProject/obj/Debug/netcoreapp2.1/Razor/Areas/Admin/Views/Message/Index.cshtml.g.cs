@@ -73,7 +73,7 @@ using ASPNetProject.Areas.Admin.ViewModels;
             WriteLiteral("\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12 grid-margin stretch-card\">\r\n            <div class=\"card\">\r\n                <div class=\"card-body\">\r\n                    <h4 class=\"card-title\">Messages</h4>\r\n                    ");
             EndContext();
             BeginContext(307, 196, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fc84072843d04d6cace08c2cb4fbc30c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3f9efc51537f47ee8c2efe172a33bee1", async() => {
                 BeginContext(365, 134, true);
                 WriteLiteral("\r\n                        Show only new\r\n                        <i class=\"mdi mdi-new-box btn-icon-append\"></i>\r\n                    ");
                 EndContext();
@@ -107,7 +107,7 @@ using ASPNetProject.Areas.Admin.ViewModels;
             WriteLiteral("                            ");
             EndContext();
             BeginContext(678, 352, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d12b05259db147a7807301b354944e8b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "245be9babade4041a48cfe9e53cdd301", async() => {
                 BeginContext(863, 163, true);
                 WriteLiteral("\r\n                                Mark all as read\r\n                                <i class=\"mdi mdi-check-all btn-icon-append\"></i>\r\n                            ");
                 EndContext();
@@ -180,7 +180,7 @@ using ASPNetProject.Areas.Admin.ViewModels;
             WriteLiteral("                                                <td>");
             EndContext();
             BeginContext(1692, 176, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7483e2bf056d4a109332e20d33421576", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "78e68d2f2d6c4762b25cf490985163a9", async() => {
                 BeginContext(1855, 9, false);
 #line 37 "E:\Projects\ASPNetProject\Areas\Admin\Views\Message\Index.cshtml"
                                                                                                                                                                                                                  Write(item.Name);
@@ -229,7 +229,7 @@ using ASPNetProject.Areas.Admin.ViewModels;
             WriteLiteral("</td>\r\n                                                <td>");
             EndContext();
             BeginContext(1927, 205, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1bcdcec0d863449a9996c424d50d8fe7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "09105caa8a674e7cbebbf51a3076c950", async() => {
                 BeginContext(2090, 12, false);
 #line 38 "E:\Projects\ASPNetProject\Areas\Admin\Views\Message\Index.cshtml"
                                                                                                                                                                                                                  Write(item.Subject);
@@ -298,7 +298,7 @@ using ASPNetProject.Areas.Admin.ViewModels;
             WriteLiteral("                                                <td>");
             EndContext();
             BeginContext(2394, 183, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "efc8441ec240457782f3e0936a7f5e64", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "81f5bf038c8544d489f00824247f4473", async() => {
                 BeginContext(2556, 3, true);
                 WriteLiteral("<b>");
                 EndContext();
@@ -353,7 +353,7 @@ using ASPNetProject.Areas.Admin.ViewModels;
             WriteLiteral("</td>\r\n                                                <td>");
             EndContext();
             BeginContext(2636, 212, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9655fb4d699b456888864ae8aeccd7b1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e79d431e68c848a8a73e037f911cd9e7", async() => {
                 BeginContext(2798, 3, true);
                 WriteLiteral("<b>");
                 EndContext();
@@ -415,7 +415,7 @@ using ASPNetProject.Areas.Admin.ViewModels;
             WriteLiteral("</td>\r\n                                                <td>");
             EndContext();
             BeginContext(2907, 239, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88cd9063368f4dea83044672c4c8fa3e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4f0d2f71003c420b934a4841d06c81fb", async() => {
                 BeginContext(3093, 49, true);
                 WriteLiteral("<i class=\"mdi mdi-check-all btn-icon-append\"></i>");
                 EndContext();

@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Subscriber>
+
+@foreach (Subscriber item in Model)
+{
+    <tr>
+        @if (item.Checked)
+        {
+            <td>@item.Email</td>
+            <td></td>
+        }
+        else
+        {
+            <td style="color:yellowgreen"><b>@item.Email</b></td>
+            <td><a asp-action="MarkAsSeen" asp-route-id="@item.Id" class="btn btn-success btn-icon-text"><i class="mdi mdi-check-all btn-icon-append"></i></a></td>
+        }
+    </tr>
+}

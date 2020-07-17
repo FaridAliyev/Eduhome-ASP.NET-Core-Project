@@ -355,6 +355,9 @@ namespace ASPNetProject.Migrations
                     b.Property<string>("Description")
                         .HasMaxLength(400);
 
+                    b.Property<string>("PostedBy")
+                        .HasMaxLength(200);
+
                     b.HasKey("Id");
 
                     b.ToTable("NoticeBoards");

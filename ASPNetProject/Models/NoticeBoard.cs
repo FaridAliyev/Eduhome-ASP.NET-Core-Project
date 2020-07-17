@@ -13,5 +13,7 @@ namespace ASPNetProject.Models
         public string Date { get; set; }
         [StringLength(400)]
         public string Description { get; set; }
+        [StringLength(200)]
+        public string PostedBy { get; set; }
     }
 }

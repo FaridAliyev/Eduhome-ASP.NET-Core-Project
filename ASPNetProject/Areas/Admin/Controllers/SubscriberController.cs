@@ -41,6 +41,10 @@ namespace ASPNetProject.Areas.Admin.Controllers
             }
             subscriber.Checked = true;
             await _db.SaveChangesAsync();
+            if (string.IsNullOrEmpty(returnUrl))
+            {
+                return RedirectToAction("Index");
+            }
             return LocalRedirect(returnUrl);
         }
 
@@ -55,6 +59,12 @@ namespace ASPNetProject.Areas.Admin.Controllers
             }
             await _db.SaveChangesAsync();
             return LocalRedirect(returnUrl);
+        }
+
+        public IActionResult Search(string term)
+        {
+            var model = _db.Subscribers.Where(c => c.Email.Contains(term)).Take(4);
+            return PartialView("_ApSubscriberSearch", model);
         }
     }
 }

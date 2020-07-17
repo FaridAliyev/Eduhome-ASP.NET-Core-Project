@@ -73,7 +73,7 @@ using ASPNetProject.Areas.Admin.ViewModels;
             WriteLiteral("\r\n<div class=\"row\">\r\n    <div class=\"col-lg-12 grid-margin stretch-card\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">\r\n                <h4 class=\"card-title\">Messages</h4>\r\n                ");
             EndContext();
             BeginContext(287, 183, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "90f05904970a448ab0afea277e6a3c1b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aa151995051349acb45626cbc2c9df82", async() => {
                 BeginContext(347, 119, true);
                 WriteLiteral("\r\n                    Show all\r\n                    <i class=\"mdi mdi-check-all btn-icon-append\"></i>\r\n                ");
                 EndContext();
@@ -105,7 +105,7 @@ using ASPNetProject.Areas.Admin.ViewModels;
             WriteLiteral("                    ");
             EndContext();
             BeginContext(552, 328, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3d00a32fb43d4a1eb76489f958d0fe4b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "37d43fbc12cc495aa8c90fd41768b1a4", async() => {
                 BeginContext(737, 139, true);
                 WriteLiteral("\r\n                        Mark all as read\r\n                        <i class=\"mdi mdi-check-all btn-icon-append\"></i>\r\n                    ");
                 EndContext();
@@ -166,7 +166,7 @@ using ASPNetProject.Areas.Admin.ViewModels;
             WriteLiteral("                                    <tr>\r\n                                        <td>");
             EndContext();
             BeginContext(1301, 183, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cf6792101820427abc00a6b2fb45cf14", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e4474d7e48ce4becad3bda5af29a1c84", async() => {
                 BeginContext(1463, 3, true);
                 WriteLiteral("<b>");
                 EndContext();
@@ -221,7 +221,7 @@ using ASPNetProject.Areas.Admin.ViewModels;
             WriteLiteral("</td>\r\n                                        <td>");
             EndContext();
             BeginContext(1535, 212, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9b885e97945a41ac99e03ebb42260fa8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5cb7d41f527748ea8e233b91907f1d5b", async() => {
                 BeginContext(1697, 3, true);
                 WriteLiteral("<b>");
                 EndContext();
@@ -283,7 +283,7 @@ using ASPNetProject.Areas.Admin.ViewModels;
             WriteLiteral("</td>\r\n                                        <td>");
             EndContext();
             BeginContext(1798, 239, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0222329ffb3a4b0e9b669bd81463bcfc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "57ac1791fdd54467b95466e6981eb3a4", async() => {
                 BeginContext(1984, 49, true);
                 WriteLiteral("<i class=\"mdi mdi-check-all btn-icon-append\"></i>");
                 EndContext();
